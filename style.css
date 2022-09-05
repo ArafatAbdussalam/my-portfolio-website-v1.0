@@ -1,0 +1,91 @@
+body {
+    width: 80%;
+    color: #fff;
+    background-color: #000;;
+    scroll-behavior: smooth;
+    margin: auto;
+    font-family: popins, monospace;
+}
+
+#ball {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 50px auto;
+    position: relative;
+    border-radius: 70%;
+    background: linear-gradient(
+      65deg,
+      aquamarine,
+      pink,
+      cyan
+    );
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0% {
+      top: 0px;
+    }
+    25% {
+      top: 50px;
+    }
+    50% {
+      top: 100px;
+    }
+    75% {
+        top: 150px
+    }
+    100% {
+        top: 0;
+    }
+}
+
+
+h1 {
+    color:aquamarine;
+}
+
+.links {
+    margin: 20px auto;
+    width: 50%;
+    align-items: center;
+    border: 2px solid aquamarine;
+    line-height: 20px;
+    padding: 20px;
+    box-shadow: 3px 5px rgba(117, 114, 114, 0.5);
+
+}
+
+li {
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+.links > a {
+    margin: 0 40%;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color:aquamarine;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 20px rgba();
+
+}
+
+footer {
+    top: 40rem;
+    text-align: center;
+}
+
+footer p:last-of-type{
+    top: 10px;
+    font-style: italic;
+}
